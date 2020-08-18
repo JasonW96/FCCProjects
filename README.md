@@ -1,8 +1,8 @@
-#The first set of projects as provided by FreeCodeCamp.org.
+# The first set of projects as provided by FreeCodeCamp.org.
 
 Inside the folder are 5 separate, bruchure style web-pages, specifically focused on developing understanding of HTML + CSS.
 
-##Each project focused on specific aspects of HTML structure and CSS.
+## Each project focused on specific aspects of HTML structure and CSS.
 
 Tribute page - Focuses on understanding the basics of layout in HTML with simple CSS,
 including ensuring the fonts and colours used in the project are easy to read as the web-page does demand focusing your attention at the text.
