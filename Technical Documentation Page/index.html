@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>C Language Technical Documentation</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>
+                <h1 id="title">C Introduction Documentation</h1>
+            </header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introduction_to_C">
+                        Introduction to C
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Getting_Started">
+                        Getting Started
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Hello_World">Hello World</a>
+                </li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li><a class="nav-link" href="#Operators">Operators</a></li>
+                <li>
+                    <a class="nav-link" href="#if_else_Statements"
+                        >if else Statements</a
+                    >
+                </li>
+                <li><a class="nav-link" href="#For_Loops">For Loops</a></li>
+                <li><a class="nav-link" href="#While_Loops">While Loops</a></li>
+                <li>
+                    <a class="nav-link" href="#Switch_Statements"
+                        >Switch Statements</a
+                    >
+                </li>
+                <li><a class="nav-link" href="#Reference">Reference</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+            <section id="Introduction_to_C" class="main-section">
+                <header>
+                    <h2>Introduction to C</h2>
+                </header>
+                <p>
+                    C is an old-school programming language, developed in 1972
+                    by Dennis Ritchie at bell laboratories of AT&amp;T. It was
+                    developed to help overcome some of the problems faced with
+                    previous languages and as a result, has come rich with
+                    innovative features used in more modern programming
+                    languages today.
+                </p>
+                <p>Some of the main key features of C include:</p>
+                <ul>
+                    <li>
+                        Rich library with many built in functions for its time
+                    </li>
+                    <li>
+                        Memory management for control over your program's RAM
+                        usage
+                    </li>
+                    <li>
+                        Pointers for directly interacting with the system's
+                        memory
+                    </li>
+                    <li>Recursion to provide powerful code reusability</li>
+                </ul>
+            </section>
+
+            <section id="Getting_Started" class="main-section">
+                <header>
+                    <h2>Getting Started</h2>
+                </header>
+                <p>
+                    C does not require any previous programming knowledge.
+                    However, it is advised you are comfortable enough to use
+                    text-editors, terminals, and file management on your laptop
+                    or PC.
+                </p>
+            </section>
+
+            <section id="Hello_World" class="main-section">
+                <header>
+                    <h2>Hello World</h2>
+                </header>
+                <p>
+                    To get started with writing your first program, simply type
+                    into your text editor the following:
+                </p>
+                <div class="code">
+                    <code>
+                        #include &lt;stdio.h&gt;
+                        <br />
+                        <br />
+                        int main(void) {
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;printf("Hello, world!\n");
+                        <br />
+                        }
+                    </code>
+                </div>
+                <p>
+                    It's worth noting that '\n' will not show up in the
+                    terminal. The value \n is actually used as an indicator for
+                    C to start a new line.
+                </p>
+            </section>
+
+            <section id="Variables" class="main-section">
+                <header>
+                    <h2>Variables</h2>
+                </header>
+                <p>
+                    There are many different variable available in C. A few of
+                    the most common types include:
+                </p>
+                <ul>
+                    <li>int - Integers</li>
+                    <li>
+                        char* - Characters (Don't worry about the * just yet)
+                    </li>
+                    <li>bool - Boolean</li>
+                    <li>
+                        float - Floating point numbers, or numbers with decimals
+                    </li>
+                    <li>double - For large integers</li>
+                </ul>
+
+                <p>To declare a variable you can do the following:</p>
+                <div class="code">
+                    <code>int x = 5;</code>
+                </div>
+                <p>
+                    You denote the variable you want to use, give it a name, and
+                    then assign it a value, using the assignment operator '='.
+                    This is commonly mistaken as an equals sign, however, in C,
+                    it's simply used to assign the value on the right to the
+                    value on the left. You then finish each line of code with a
+                    ';'
+                </p>
+            </section>
+
+            <section id="Operators" class="main-section">
+                <header>
+                    <h2>Operators</h2>
+                </header>
+                <p>
+                    On top of having different variables we can use in C. There
+                    are also a number of operators available that help you
+                    perform arithmetic on your variables.
+                </p>
+                <p>Here's a list of some of the most popular ones:</p>
+                <ul>
+                    <li><code>+</code> for addition</li>
+                    <li><code>-</code> for subtraction</li>
+                    <li><code>*</code> for multiplication</li>
+                    <li><code>/</code> for division</li>
+                    <li><code>%</code> for remainder</li>
+                </ul>
+            </section>
+
+            <section id="if_else_Statements" class="main-section">
+                <header>
+                    <h2>if else Statements</h2>
+                </header>
+                <p>
+                    if else statements are easy ways of being able to check if a
+                    condition is true or false. If the statement is true, you
+                    perform a set of actions, else, you perform an alternative
+                    set of actions.
+                </p>
+                <div class="code">
+                    <code>
+                        if (condition) {
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement_1;
+                        <br />
+                        }
+                        <br />
+                        else {
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement_2;
+                        <br />
+                        }
+                    </code>
+                </div>
+
+                <p>
+                    You can also check for more than just one condition by using
+                    the built in 'else if' statement. This can be done the
+                    following way:
+                </p>
+                <div class="code">
+                    <code>
+                        if (condition_1) {
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement_1;
+                        <br />
+                        }
+                        <br />
+                        else if (condition_2) {
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement_2;
+                        <br />
+                        }
+                        <br />
+                        else {
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement_3;
+                        <br />
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section id="For_Loops" class="main-section">
+                <header>
+                    <h2>For Loops</h2>
+                </header>
+                <p>
+                    Loops are ways of being able to repeat a specific line of
+                    code a set amount of times. With for loops, you can define
+                    how many times you would like the code to run. For example:
+                </p>
+                <div class="code">
+                    <code>
+                        for (int i = 0; i &lt 3; i++) {
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement;
+                        <br />
+                        }
+                    </code>
+                </div>
+                <p>Going through this bit by bit, let's see what this does</p>
+                <ul>
+                    <li>
+                        First you declare an integer i, and assign it the value
+                        0
+                    </li>
+                    <li>
+                        Then you check to see if the value i is less than 3. If
+                        so, continue running the code, if not, then stop
+                    </li>
+                    <li>
+                        You run the code, and after doing so, add 1 (from i++)
+                        to i
+                    </li>
+                    <li>Rinse and repeat</li>
+                </ul>
+            </section>
+
+            <section id="While_Loops" class="main-section">
+                <header>
+                    <h2>While Loops</h2>
+                </header>
+                <p>
+                    While loops are also a form of loop, however, instead of
+                    incrementing a value a set amount of times, this loop will
+                    continue to run while a specific condition is true. Taking a
+                    look at this we have:
+                </p>
+                <div class="code">
+                    <code>
+                        while (condition == true) {
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement;
+                        <br />
+                        }
+                    </code>
+                </div>
+                <p>
+                    Notice we use '=='. This operator is used to check if the
+                    value on the left is equal to the value of the right. If so,
+                    it outputs true. If not, it outputs false.
+                </p>
+            </section>
+
+            <section id="Switch_Statements" class="main-section">
+                <header>
+                    <h2>Switch Statements</h2>
+                </header>
+                <p>
+                    In some circumstances we need to check many different cases
+                    for a variable. While if else statements are great for this,
+                    if you are checking more than a few possible outcomes, the
+                    if else statement can quickly become too complex. Hence we
+                    have something called a switch statement.
+                </p>
+                <p>It works as follows:</p>
+                <p>Say we define a variable like so</p>
+                <code
+                    >int sum = get_int("Enter a number between 1 and
+                    5\n");</code
+                >
+                <p>
+                    This promts the user to enter their age (As given by the
+                    &lt;cs50&gt; library).
+                </p>
+                <p>
+                    Now we want to check the value that the user has entered and
+                    run some code based on the value given. As there are many
+                    possible values to check, we can use the switch statement
+                    like so
+                </p>
+                <div class="code">
+                    <code>
+                        switch (num) {
+                        <br />
+                        case 1:
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement_1;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;break;
+                        <br />
+                        case 2:
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement_2;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;break;
+                        <br />
+                        case 3:
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement_3;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;break;
+                        <br />
+                        case 4:
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement_4;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;break;
+                        <br />
+                        case 5:
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;statement_5;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;break;
+                        <br />
+                        }
+                    </code>
+                </div>
+                <p>Breaking this down we see the following:</p>
+                <ul>
+                    <li>
+                        First we say we are going to perform a switch statement
+                    </li>
+                    <li>From there we then check each case, from 1 to 5</li>
+                    <li>
+                        Depending on the value entered by the user, we will then
+                        execute the code we wish to use
+                    </li>
+                    <li>
+                        Optionally, we then say <code>break;</code> as a way of
+                        ending the switch statement, so as not to waste
+                        resources checking the remaining statements
+                    </li>
+                </ul>
+            </section>
+
+            <section id="Reference" class="main-section">
+                <header>
+                    <h2>Reference</h2>
+                </header>
+                <p>
+                    Most of the information in here was written by Jason,
+                    however, these
+                    <a
+                        href="https://cs50.harvard.edu/x/2020/notes/1/"
+                        target="_blank"
+                        >notes</a
+                    >
+                    from Harvard's CS50 course helped with the development of
+                    most of it.
+                </p>
+                <p>
+                    For further information on C, I highly recommend checking
+                    out
+                    <a href="https://devdocs.io/c/" target="_blank"
+                        >devdocs.io</a
+                    >.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
+
+<!--
+User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
+
+User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
+
+User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
+
+User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
+
+User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
+
+User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
+
+User Story #7: The .main-section elements should contain at least 5 li items total (not each).
+
+User Story #8: I can see a nav element with a corresponding id="navbar".
+
+User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
+
+User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
+
+User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
+
+User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+
+User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
+
+User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+
+User Story #15: My Technical Documentation page should use at least one media query.
+-->

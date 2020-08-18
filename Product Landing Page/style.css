@@ -1,0 +1,281 @@
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: Cinzel, serif;
+    font-size: medium;
+    background-color: #cde3b5;
+    color: #080808;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 170%;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 130%;
+}
+h3 {
+    font-size: 120%;
+    line-height: 1.5em;
+}
+h4 {
+    font-size: 110%;
+}
+
+header {
+    background-image: url(https://images.pexels.com/photos/461428/pexels-photo-461428.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+#title {
+    position: absolute;
+    background-color: rgba(115, 95, 61, 0.8);
+    top: 27%;
+    right: 5%;
+    padding: 20px;
+    text-align: center;
+    color: #f3f3f3;
+    width: 300px;
+}
+
+#home {
+    background-color: rgba(115, 95, 61, 0.8);
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+#header-img {
+    width: 50px;
+}
+
+#nav-bar {
+    float: right;
+    padding-right: 20px;
+}
+
+.nav-link-li {
+    display: inline;
+    padding: 0px 10px;
+    font-size: 130%;
+}
+
+.nav-link-li a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+.nav-link-li a:hover {
+    text-decoration: underline;
+}
+
+#about,
+#footer {
+    width: 70%;
+    margin: 0px auto;
+}
+
+#about {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #def4c6;
+}
+
+#form {
+    text-align: center;
+    margin: 50px auto;
+}
+
+#form label {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#email {
+    margin: 10px;
+    padding: 4px;
+    width: 30%;
+}
+
+#submit {
+    background-color: #ca802b;
+    padding: 7px;
+    width: 20%;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+#submit:hover {
+    background-color: #b06011;
+}
+
+.benefits {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+i {
+    font-size: 50px;
+    color: #ca802b;
+}
+
+#vid {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#buy-now {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.prices {
+    position: relative;
+    border: #080808 1px solid;
+    border-radius: 3px;
+    width: 20%;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.prices-1 {
+    background-color: rgba(115, 95, 61, 0.8);
+    padding: 8px;
+}
+
+.prices > p {
+    padding: 8px;
+}
+
+.prices > h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.prices > p {
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+
+.prices > a {
+    position: absolute;
+    bottom: 8px;
+    left: 20%;
+    right: 20%;
+    color: #080808;
+    background-color: #ca802b;
+    text-decoration: none;
+    padding: 7px;
+    border-style: none;
+    border-radius: 2px;
+    transition: background-color 1s;
+}
+
+.prices > a:hover {
+    background-color: #b06011;
+}
+
+#footer {
+    color: #f3f3f3;
+    font-size: small;
+    background-color: rgba(100, 85, 50, 0.8);
+    padding: 10px;
+}
+
+#footer > ul li {
+    list-style: none;
+    float: right;
+    margin: 0px 10px;
+}
+
+#footer > ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer > ul li a:hover {
+    text-decoration: underline;
+}
+
+@media all and (max-width: 1000px) {
+    #video {
+        width: 90%;
+        height: 300px;
+    }
+
+    #buy-now {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prices {
+        width: 50%;
+    }
+
+    #about,
+    #footer {
+        width: 90%;
+    }
+
+    #email {
+        width: 50%;
+    }
+
+    #submit {
+        width: 30%;
+    }
+}
+
+/*
+Logo image: https://cdn.pixabay.com/photo/2018/09/06/12/31/green-tea-3658157_960_720.png
+
+Background Image:
+
+https://images.pexels.com/photos/461428/pexels-photo-461428.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260
+
+Font-families: Cinzel, serif and neuton, serif
+
+colours: 
+rgba(115, 95, 61, 0.8) - Header
+
+#def4c6 - Main background color
+
+#080808 - text color
+
+#f3f3f3 - text color
+
+Video source: https://www.youtube.com/embed/4kLV-uIzr8U
+
+*/

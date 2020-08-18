@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- Custom Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Custom font-awesome icons -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/fontawesome.min.css" />
+        <title>Jason's Matcha</title>
+    </head>
+    <body>
+        <header id="header">
+            <div id="title">
+                <h1>Jason's Matcha Tea</h1>
+                <h2>Helping you discover your inner peace</h2>
+            </div>
+
+            <div id="home">
+                <img
+                    id="header-img"
+                    src="https://cdn.pixabay.com/photo/2018/09/06/12/31/green-tea-3658157_960_720.png"
+                    alt="Our matcha tea logo"
+                />
+                <nav id="nav-bar">
+                    <ul>
+                        <li class="nav-link-li">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-link-li">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-link-li">
+                            <a class="nav-link" href="#buy-now">Buy Now</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="about">
+            <form
+                id="form"
+                action="https://www.freecodecamp.com/email-submit"
+                method="GET"
+            >
+                <label for="email">Sign up to our email list</label>
+                <br />
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email"
+                />
+                <br />
+                <input
+                    id="submit"
+                    name="submit"
+                    type="submit"
+                    value="Sign up"
+                />
+            </form>
+
+            <section id="main-content">
+                <article class="benefits">
+                    <div class="icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="contents">
+                        <h3>Boosts Energy</h3>
+                        <p>
+                            Our family secret recipe has been proven to help
+                            give you a boost of energy that lasts for up to 8
+                            hours! Be ready for the day, whether it be a tough
+                            gym sesh, or an important meeting with the boss.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="benefits">
+                    <div class="icon"><i class="fas fa-flask"></i></div>
+
+                    <div class="contents">
+                        <h3>High in Anti-Oxidants</h3>
+                        <p>
+                            Anti-Oxidants have shown to be extremely effective
+                            in protecting the body from naturally harmful
+                            substances. This includes tobacco, radiation and
+                            even your own stomach toxins!
+                        </p>
+                    </div>
+                </article>
+                <article class="benefits">
+                    <div class="icon"><i class="fas fa-truck"></i></div>
+
+                    <div class="contents">
+                        <h3>Super-fast Delivery</h3>
+                        <p>
+                            We now delivery across the entire UK, from Land's
+                            End to John o' Groats. Selecting our premium
+                            delivery option allows us to give you your favourite
+                            Matcha package in just 2 days.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <div id="vid">
+                <iframe
+                    id="video"
+                    width="710px"
+                    height="405px"
+                    src="https://www.youtube.com/embed/4kLV-uIzr8U"
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+            </div>
+
+            <section id="buy-now">
+                <div class="prices">
+                    <h3 class="prices-1">Starter Pack</h3>
+                    <h4>$19.99</h4>
+                    <p>
+                        Great for first time buyers! Includes matcha tea set
+                    </p>
+                    <a
+                        href="https://www.freecodecamp.com/email-submit"
+                        target="_blank"
+                        >Buy Now</a
+                    >
+                </div>
+                <div class="prices">
+                    <h3 class="prices-1">Medium Pack</h3>
+                    <h4>$29.99</h4>
+                    <p>
+                        The perfect portions to keep you going for the month!
+                        Includes 2 extra packets of our premium Sencha Lite
+                    </p>
+                    <a
+                        href="https://www.freecodecamp.com/email-submit"
+                        target="_blank"
+                        >Buy Now</a
+                    >
+                </div>
+                <div class="prices">
+                    <h3 class="prices-1">Conisseur Pack</h3>
+                    <h4>$49.99</h4>
+                    <p>
+                        Everything you need to brew the perfect cup for you,
+                        plus a little extra for the family! Includes free Jason
+                        Matcha Mug
+                    </p>
+                    <a
+                        href="https://www.freecodecamp.com/email-submit"
+                        target="_blank"
+                        >Buy Now</a
+                    >
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <p>Copyright &copy; 2020, Jason's Matcha</p>
+        </footer>
+    </body>
+</html>
+
+<!-- User Story #1: My product landing page should have a header element with a corresponding id="header".
+
+User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+
+User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
+
+User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
+
+User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+
+User Story #6: I can watch an embedded product video with id="video".
+
+User Story #7: My landing page has a form element with a corresponding id="form".
+
+User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
+
+User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+
+User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+
+User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+
+User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+
+User Story #13: The navbar should always be at the top of the viewport.
+
+User Story #14: My product landing page should have at least one media query.
+
+User Story #15: My product landing page should utilize CSS flexbox at least once. -->

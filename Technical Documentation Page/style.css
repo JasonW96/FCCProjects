@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-size: medium;
+    line-height: 1.3em;
+    background: #f5f5f5;
+}
+
+#title {
+    text-align: center;
+    padding: 20px;
+}
+
+#navbar {
+    position: fixed;
+    float: left;
+    width: 300px;
+    height: 100%;
+    border-right: 2px solid grey;
+}
+
+#navbar li {
+    border-top: 1px solid grey;
+    padding: 10px;
+}
+
+#navbar li:hover {
+    background-color: #ddd;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555;
+}
+
+#main-doc {
+    margin-left: 300px;
+    padding: 10px 20px 0px 30px;
+}
+
+.main-section {
+    margin: 40px 0px;
+}
+
+.main-section > header h2 {
+    margin-bottom: 20px;
+}
+
+.main-section > p,
+.main-section > ul li,
+.main-section > .code {
+    color: #555;
+    text-align: justify;
+}
+
+.main-section > ul {
+    margin: 20px 60px;
+}
+
+.main-section > ul li {
+    line-height: 1.5em;
+}
+
+code {
+    background-color: #eee;
+}
+
+.main-section > .code {
+    padding: 4px;
+    background-color: #eee;
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px #ddd ridge;
+}
+
+.main-section > ul li code {
+    padding: 4px;
+}
+
+@media all and (max-width: 600px) {
+    #navbar {
+        position: static;
+        float: none;
+        width: 100%;
+        height: auto;
+        border-right: none;
+    }
+
+    #main-doc {
+        border-top: 1px solid grey;
+        margin-left: 0px;
+    }
+}
